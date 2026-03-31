@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCM 리얼</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #1B3A6B;
+      --honey: #8B5E00;
+      --honey-light: #B07D0D;
+      --cream: #FFFBF2;
+      --border: #EDD9A3;
+      --text: #2D1A00;
+      --secondary: #7A6040;
+      --white: #FFFFFF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: var(--cream); color: var(--text); }
+
+    header {
+      background: var(--honey);
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    header h1 { font-size: 36px; font-weight: 800; color: #fff; letter-spacing: -1px; }
+    header p { margin-top: 10px; font-size: 15px; color: rgba(255,255,255,0.6); }
+
+    .links {
+      max-width: 480px;
+      margin: 48px auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: var(--text);
+      transition: box-shadow 0.2s;
+    }
+    .link-card:hover { box-shadow: 0 4px 16px rgba(139,94,0,0.12); }
+    .link-card .icon { font-size: 22px; }
+    .link-card .label { font-size: 15px; font-weight: 700; }
+    .link-card .desc { font-size: 12px; color: var(--secondary); margin-top: 2px; }
+    .link-card .arrow { margin-left: auto; color: var(--honey-light); font-size: 18px; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--secondary);
+      border-top: 1px solid var(--border);
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MCM 리얼</h1>
+    <p>Daily American English · MCM English</p>
+  </header>
+
+  <div class="links">
+    <a class="link-card" href="privacy-policy.html">
+      <span class="icon">🔒</span>
+      <div>
+        <div class="label">개인정보처리방침</div>
+        <div class="desc">Privacy Policy</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+    <a class="link-card" href="terms-of-service.html">
+      <span class="icon">📄</span>
+      <div>
+        <div class="label">이용약관</div>
+        <div class="desc">Terms of Service</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+    <a class="link-card" href="support.html">
+      <span class="icon">💬</span>
+      <div>
+        <div class="label">고객 지원</div>
+        <div class="desc">Support</div>
+      </div>
+      <span class="arrow">›</span>
+    </a>
+  </div>
+
+  <footer>© 2026 MCM English · All rights reserved.</footer>
+</body>
+</html>
